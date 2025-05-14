@@ -7,4 +7,4 @@ project_name: "1_demo"
 #   project: "name_of_other_project"
 # }
 
-new_lookml_runtime: yes
+#new_lookml_runtime: yes
