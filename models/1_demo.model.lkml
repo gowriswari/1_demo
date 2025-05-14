@@ -314,8 +314,8 @@ explore: xss_test_5 {}
 
 explore: xss_test_6 {}
 
-explore: xss_test_7 {}
+#explore: xss_test_7 {}
 
-explore: xss_test_8 {}
+#explore: xss_test_8 {}
 
-explore: xss_test_9 {}
+#explore: xss_test_9 {}
