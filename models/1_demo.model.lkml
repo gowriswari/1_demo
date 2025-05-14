@@ -308,11 +308,11 @@ explore: xss_test_16 {}
 
 explore: xss_test_2 {}
 
-explore: xss_test_4 {}
+#explore: xss_test_4 {}
 
-explore: xss_test_5 {}
+#explore: xss_test_5 {}
 
-explore: xss_test_6 {}
+#explore: xss_test_6 {}
 
 #explore: xss_test_7 {}
 
