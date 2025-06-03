@@ -3,6 +3,8 @@ connection: "thelook"
 # include all the views
 include: "/views/**/*.view.lkml"
 
+include: "/Test.dashboard.lookml"
+
 datagroup: 1_demo_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
   max_cache_age: "1 hour"
@@ -131,7 +133,15 @@ explore: map_layer {}
 explore: orders {
   join: users {
     type: left_outer
-    sql_on: ${orders.user_id} = ${users.id} ;;
+    # sql_on: case when orders.status = "PENDING" then
+    #         ${orders.user_id} = ${users.id} else 1=1 end  ;;
+    sql_on:  {% if orders.status._value == "PENDING" %}
+              ${orders.user_id} = ${users.id}
+              {%else%}
+
+                 1=1
+
+              {%endif%};;
     relationship: many_to_one
   }
 }
