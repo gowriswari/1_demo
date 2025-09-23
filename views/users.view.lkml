@@ -10,6 +10,7 @@ view: users {
   dimension: age {
     type: number
     sql: ${TABLE}.age ;;
+    order_by_field: age
   }
   dimension: city {
     type: string
