@@ -4,7 +4,7 @@ include: "/views/*.view.lkml"                # include all views in the views/ f
 
 datagroup: Pavan_Test_default_datagroup {
   # sql_trigger: SELECT MAX(id) FROM etl_log;;
-  max_cache_age: "1 hour"
+  max_cache_age: "30 minutes"
 }
 
 persist_with: Pavan_Test_default_datagroup
