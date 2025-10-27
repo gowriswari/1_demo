@@ -17,7 +17,7 @@ view: products {
   }
 
   dimension: test1 {
-    label: "blank test"
+    label: "blank test #"
     type: string
     sql:CONCAT(${category}, ' - ', ${department})  ;;
   }
