@@ -15,6 +15,13 @@ view: products {
     type: string
     sql: ${TABLE}.category ;;
   }
+
+  dimension: test1 {
+    label: "blank test"
+    type: string
+    sql:CONCAT(${category}, ' - ', ${department})  ;;
+  }
+
   dimension: department {
     type: string
     sql: ${TABLE}.department ;;
